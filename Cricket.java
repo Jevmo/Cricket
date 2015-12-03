@@ -47,6 +47,15 @@ public class Cricket extends JPanel
 		System.out.println("Who is going second?");
 		away = sc.nextLine();
 
+		undo.addActionListener(new ActionListener(){
+
+			public void actionPerformed(ActionEvent e)
+			{
+				score.undo();
+				sb.printScore();
+			}
+			});
+
 		score = new Score(home,away);
 		cc = new JTextArea();
 			
