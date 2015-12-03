@@ -54,8 +54,16 @@ public class Scoreboard extends JTextArea
 		this.setForeground(Color.WHITE);
 		this.setFont(font);
 		this.setText(null);
-        String nameStr = String.format("%12s|  |%-12s\n", 
-					score.getAwayName(), score.getHomeName());
+		String nameStr;
+		if(score.getTeam() == 'a')
+		{
+			nameStr = String.format("%12s|  |%-12s\n", 
+					(">"+ score.getAwayName()), score.getHomeName());
+		} else
+		{
+			nameStr = String.format("%12s|  |%-12s\n", 
+					score.getAwayName(), (score.getHomeName()+"<"));
+		}
 		this.append(nameStr);
         this.append("-----------------------------\n"); 
 		String[] keyArr = {"20", "19", "18", "17", "16", "15", "BE"};
@@ -69,9 +77,7 @@ public class Scoreboard extends JTextArea
         this.append("-----------------------------\n"); 
         String scoreStr = String.format("%11d      %-11d\n",
 					score.getAwayScore(), score.getHomeScore());
-		String TEAM = "Up now " + score.getTeam();
 		this.append(scoreStr);
-		this.append(TEAM);
 
     }
 	 
