@@ -115,7 +115,7 @@ public class Board extends JPanel implements MouseListener
 		{
 			mult =1;
 		}
-		else mult = 1;
+		else mult = 0;
 		if(r<=20 && r>8)
 		{
 			mult = 1;
