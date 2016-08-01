@@ -1,5 +1,5 @@
 # Cricket
-A simple (unfinished) program for the dart game Cricket
+A simple (unfinished) program to help keep score for the dart game Cricket
 
 ![Screenshot](https://raw.github.com/zcarciu/Cricket/master/cricket_screenshot.png)
  
