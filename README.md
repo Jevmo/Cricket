@@ -1,5 +1,6 @@
 # Cricket
 A simple (unfinished) program to help keep score for the dart game Cricket
+You click where the dart landed and it updates the score
 
 ![Screenshot](https://raw.github.com/zcarciu/Cricket/master/cricket_screenshot.png)
  
