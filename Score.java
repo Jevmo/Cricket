@@ -19,7 +19,7 @@ public class Score
 
     private char team = 'h';
 
-	private Stack<String> stack = new Stack<String>();
+    private Stack<String> stack = new Stack<String>();
 
     public Score(String home, String away)
     {
